@@ -1,0 +1,73 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.margin-top {
+    margin-top: 90px;
+}
+
+.main-body .downloads {
+    padding: 90px 50px 0 50px;
+}
+
+
+.main-body .downloads-jombotron {
+    text-align: center;
+}
+
+.main-body .downloads-jombotron-h1 {
+    font-weight: bold;
+    font-size: 52px;
+    color: black;
+}
+
+.main-body .downloads-jombotron-p {
+    color: rgba(25, 25, 25, .8);
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+.downloads-logos {
+    padding-left: 20px;
+    display: grid;
+    grid-template-columns: repeat(6, 17.3%);
+    text-align: center;
+}
+
+.downloads-platform-cont {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.downloads-platform-cont img {
+    width: 100%;
+    max-width: 972px;
+}
+
+
+@media(max-width: 1020px) {
+    .downloads-logos {
+        display: grid;
+        grid-template-columns: repeat(3, 40%);
+    }
+}
+
+@media(max-width: 800px) {
+    .downloads-logos {
+        padding-left: 20px;
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+    }
+}
+
+@media(max-width: 428px) {
+    .downloads-logos {
+        padding-left: 20px;
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(1, 100%);
+    }
+}

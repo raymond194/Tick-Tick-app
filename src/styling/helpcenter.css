@@ -1,0 +1,351 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.margin-top {
+    margin-top: 90px;
+}
+
+.margin-top2 {
+    margin-top: 60px;
+}
+
+.font-weight {
+    font-weight: bold;
+}
+
+
+
+
+
+
+.helpcenter {
+    padding: 90px 50px 0 50px;
+}
+
+.helpcenter-header-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.helpcenter-header-cont h1 {
+    font-weight: bold;
+    font-size: 49px;
+}
+
+.helpcenter-header-cont input {
+    width: 550px;
+    color: grey;
+    padding: 10px 20px 10px 20px;
+    margin-top: 15px;
+}
+
+.helpcenter-boxes {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.helpcenter-box {
+    background-color: white;
+    text-align: center;
+    padding: 25px 72px 20px 72px;
+    border-radius: 10px;
+    cursor: pointer;
+    transform: translate(0px, 0px);
+    transition: transform 0.3s;
+}
+
+.helpcenter-box:hover {
+    transform: translate(0px, -10px);
+}
+
+.helpcenter-boxes2 {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.helpcenter-box2 {
+    background-color: white;
+    padding: 25px 28px 20px 28px;
+    border-radius: 10px;
+    cursor: pointer;
+    transform: translate(0px, 0px);
+    transition: transform 0.3s;
+}
+
+.helpcenter-box2:hover {
+    transform: translate(0px, -10px);
+
+}
+
+.helpcenter-box2 p {
+    font-size: 17px;
+}
+
+
+.helpcenter-box img {}
+
+.helpcenter-box p {
+    font-weight: bold;
+    font-size: 19px;
+    margin-top: 30px;
+}
+
+.unique-features {
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    grid-template-rows: auto;
+    gap: 50px;
+}
+
+.unique-features-box {
+    background-color: white;
+    width: 100%;
+    max-width: 950px;
+    border-radius: 15px;
+    transform: translate(0px, 0px);
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.unique-features-box:hover {
+    transform: translate(0px, -10px);
+}
+
+.unique-features-box img {
+    width: 100%;
+    border-radius: 10px 0px 0px 0px;
+}
+
+.box-writings {
+    padding: 20px 20px 10px 30px;
+}
+
+.box-writings h1 {
+    font-size: 20px;
+}
+
+.box-writings p {
+    color: grey;
+}
+
+.helpcenter-positioning {
+    display: flex;
+    justify-content: center;
+}
+
+
+.position-content {
+    position: relative;
+    display: inline-block;
+}
+
+.position-content img {
+    width: 100%;
+    max-width: 900px;
+    min-width: 400px;
+    display: block;
+}
+
+.position-content-overlay {
+    position: absolute;
+    top: 60px;
+    left: 10px;
+}
+
+.position-content-overlay h1 {
+    font-weight: bold;
+}
+
+.position-content-overlay button {
+    padding: 10px 35px 10px 35px;
+    border-radius: 8px;
+    margin-top: 20px;
+    font-size: 17px;
+}
+
+
+
+@media(max-width: 1200px) {
+    .helpcenter-boxes {
+        width: 100%;
+        display: flex;
+        gap: 35px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .helpcenter-box2 {
+        background-color: white;
+        padding: 25px 28px 20px 28px;
+        border-radius: 10px;
+        cursor: pointer;
+        transform: translate(0px, 0px);
+        transition: transform 0.3s;
+    }
+
+    .helpcenter-box2 .para {
+        display: none;
+    }
+}
+
+@media(max-width: 992px) {
+    .helpcenter-boxes2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        flex-wrap: wrap;
+    }
+}
+
+@media(max-width: 900px) {
+    .unique-features {
+        display: grid;
+        grid-template-columns: repeat(2, 48%);
+        grid-template-rows: auto;
+        gap: 50px;
+    }
+}
+
+@media(max-width: 700px) {
+
+    .helpcenter {
+        padding: 90px 20px 0px 20px;
+    }
+
+    .helpcenter-boxes {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: normal;
+    }
+
+    .helpcenter-box {
+        display: flex;
+        gap: 10px;
+        background-color: white;
+        padding: 5px 15px 0px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        transform: translate(0px, 0px);
+        transition: transform 0.3s;
+    }
+
+    .helpcenter-box img {
+        width: 50px;
+        height: 50px;
+    }
+
+
+    .helpcenter-box p {
+        font-size: 15px;
+        transform: translate(0px, -12px);
+        font-weight: normal;
+    }
+}
+
+@media(max-width: 562px) {
+
+    .helpcenter-header-cont input {
+        width: 450px;
+        color: grey;
+        padding: 7px 17px 7px 17px;
+        margin-top: 15px;
+    }
+
+    .helpcenter-box2 p {
+        font-size: 13px;
+    }
+
+    .unique-features-box {
+        background-color: white;
+        width: 100%;
+        max-width: 300px;
+        border-radius: 15px;
+        transform: translate(0px, 0px);
+        transition: transform 0.3s;
+        cursor: pointer;
+    }
+
+    .unique-features-box img {
+        width: 100%;
+        max-width: 300px;
+        min-width: 300px;
+        border-radius: 10px 0px 0px 0px;
+    }
+
+
+    .unique-features {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        overflow-x: scroll;
+    }
+
+    .box-writings h1 {
+        font-size: 15px;
+    }
+
+    .box-writings p {
+        color: grey;
+        font-size: 12px;
+    }
+
+    .box-writings {
+        padding: 10px 5px 0px 5px;
+    }
+
+    .position-content-overlay {
+        position: absolute;
+        top: 10px;
+        left: 100px;
+    }
+
+    .position-content-overlay h1 {
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    .position-content-overlay button {
+        padding: 10px 10px 10px 10px;
+        border-radius: 8px;
+        margin-top: 0px;
+        font-size: 10px;
+
+    }
+}
+
+@media(max-width: 700px) {
+    .position-content-overlay {
+        position: absolute;
+        top: 10px;
+        left: 100px;
+    }
+
+    .position-content-overlay h1 {
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    .position-content-overlay button {
+        padding: 10px 10px 10px 10px;
+        border-radius: 8px;
+        margin-top: 0px;
+        font-size: 10px;
+    }
+}
