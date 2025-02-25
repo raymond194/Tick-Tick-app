@@ -7,7 +7,7 @@ function Footer() {
         <div className='features-footer'>
           <div className='features-footer-link'>
             <p>products</p>
-            <a href='#'>Get started</a>
+            <a href='#'>Gett started</a>
             <a href='#'>Download Apps</a>
             <a href='#'>Premium</a>
             <a href='#'>Education Offer</a>
