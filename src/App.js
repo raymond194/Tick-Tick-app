@@ -7,6 +7,7 @@ import Header from "./pages/Header";
 import Sign from "./pages/Sign";
 import "./styling/styles.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 function App() {
   return (
     <>
