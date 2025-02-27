@@ -4,6 +4,7 @@ import "../styling/styles.css"
 import myimage from '../images/ticklogo.jpg'
 import { useLocation } from "react-router-dom";
 import SignUp from '../pages2/SignUp';
+import { Navbar, Nav, Container } from "react-bootstrap";
 
 
 
@@ -28,26 +29,31 @@ function Header() {
     }
     return (
         <>
-            <div className="header" style={{ backgroundColor: isPremiumPage ? "rgba(25, 25, 25, 0.98)" : isSignIn ? "#f3f0f0": "white"}}>
+            <div className="header" style={{ backgroundColor: isPremiumPage ? "rgba(25, 25, 25, 0.98)" : isSignIn ? "#f3f0f0" : "white" }}>
                 <div className="header-content">
                     <a href='/'>
                         <img src={myimage} className='logo' alt='logo' />
                     </a>
 
-                    <nav>
+                    <Navbar bg={isPremiumPage ? "dark" : "light"} variant="dark" expand="lg" >
+                        <Container>
+                            <Navbar.Toggle aria-controls="basic-navbar-nav" style={{backgroundColor: isPremiumPage ? "black" : "black" }}>
+                                <span className="navbar-toggler-icon" style={{backgroundColor: isPremiumPage ? "black" : "black" }}></span>
+                            </Navbar.Toggle>
 
-                        <div className='links' style={displayLink}>
-                            <Link className="link" style={linkStyles} to="/" >Features</Link>
-                            <Link className="link" style={linkStyles} to="/downloads">Download</Link>
-                            <Link className="link" style={linkStyles} to="/premium">Premium</Link>
-                            <Link className="link" style={linkStyles} to="/helpcenter">Help Center</Link>
-                            <Link className="link" style={linkStyles} to="/signin">Sign In</Link>
-                            <button className='btn' style={buttonLink}>Sign Up for Free</button>
-                        </div>
-
+                            <Navbar.Collapse id="basic-navbar-nav">
+                                <Nav className="ms-auto d-flex flex-column flex-lg-row">
+                                    <Link className="link" style={linkStyles} to="/" >Features</Link>
+                                    <Link className="link" style={linkStyles} to="/downloads">Download</Link>
+                                    <Link className="link" style={linkStyles} to="/premium">Premium</Link>
+                                    <Link className="link" style={linkStyles} to="/helpcenter">Help Center</Link>
+                                    <Link className="link" style={linkStyles} to="/signin">Sign In</Link>
+                                    <button className='btn' style={buttonLink}>Sign Up for Free</button>
+                                </Nav>
+                            </Navbar.Collapse>
+                        </Container>
+                    </Navbar>
                     <SignUp signUp={signUp} />
-                    
-                    </nav>
                 </div>
             </div >
         </>
