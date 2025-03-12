@@ -15,6 +15,12 @@ import wirecutter from '../images/wirecutter.png'
 import verge from '../images/the_verge.png'
 import mashable from '../images/mashable.png'
 import trends from '../images/digitaltrends.png'
+import platform from '../images/platform.png'
+import replace1 from '../images/replace1.jpg'
+import replace2 from '../images/replace2.jpg'
+import replace3 from '../images/replace3.jpg'
+
+
 import gizmodo from '../images/gizmodo.png'
 import central from '../images/androidcentral.png'
 import authority from '../images/androidauthority.png'
@@ -32,7 +38,7 @@ function Features() {
           <h1 className="feature-jombotron-h1">Stay Organized,
             Stay Creative.
           </h1>
-          <p className="feature-jombotron-p">Join millions of people to capture ideas, organize life, and do something <br /> creative.</p>
+          <p className="feature-jombotron-p">Join millions of people to captuqre ideas, organize life, and do something creative.</p>
 
           <div className='feature-jombotron-buttons'>
             <button className=" rounded-pill feature-jombotron-button1">Get Started</button>
@@ -41,10 +47,7 @@ function Features() {
         </div>
 
         <div className='features-images-container'>
-          <div>
             <img src={featuresImg1} alt="todoimg" className='featuresimg1' />
-            <img src={featuresimg2} alt="todoimg" className='featuresimg2' />
-          </div>
         </div>
 
         <div className='features-ratings-images'>
@@ -63,14 +66,14 @@ function Features() {
           </div>
 
           <div className='features-whitecard-image'>
-            <img src={calender} className='features-images' alt='image' />
+            <img src={replace1} className='features-images' alt='image' />
           </div>
         </WhiteContainer>
 
 
         <WhiteContainer>
           <div className='features-whitecard-image'>
-            <img src={calender} className='features-images' alt='image' />
+            <img src={replace2} className='features-images' alt='image' />
           </div>
 
           <div className='features-whitecard-text'>
@@ -90,7 +93,7 @@ function Features() {
           </div>
 
           <div className='features-whitecard-image'>
-            <img src={calender} className='features-images' style={{ visibility: "hidden" }} alt='image' />
+            <img src={replace3} className='features-images' alt='image' />
           </div>
         </WhiteContainer>
 
@@ -112,14 +115,16 @@ function Features() {
 
             <div className='white-container-unique-splitter'>
               <div className='features-whitecard-image'>
-                <img src={calender} className='features-images' alt='image' />
+                <img src={calender} className='features-images2' alt='image' />
               </div>
 
               <div className='features-whitecard-text-unique'>
-                <h4>Timeline View for Projects</h4>
-                <p>Project timelines make durations easy to identify.</p>
-                <p>Drag-and-drop allows for task time adjustments.</p>
-                <p>Daily, weekly, and monthly intervals provide flexibility.</p>
+                <h4>Efficient Calendar Views</h4>
+                <p>Monthly View gives a clear overall layout.</p>
+                <p>Weekly View clarifies busy and free intervals.</p>
+                <p>Agenda View ensures tasks are executed in order.</p>
+                <p>Multi-Day View enables dynamic adjustments.</p>
+                <p>Multi-Week View lets you shift weeks for changes.</p>
               </div>
             </div>
 
@@ -138,7 +143,7 @@ function Features() {
         </div>
 
         <WhiteContainer>
-          <img src={tab} alt='tab' className='features-tab-img' />
+          <img src={platform} alt='tab' className='features-tab-img1' />
         </WhiteContainer>
 
         <div className='features-headings margin-top'>

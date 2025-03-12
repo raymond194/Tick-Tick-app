@@ -17,7 +17,7 @@ function HelpCenter() {
   return (
     <>
       <div className='helpcenter'>
-        <div className='helpcenter-header-cont margin-top'>
+        <div className='helpcenter-header-cont'>
           <h1>How can we <span className='text-primary'>help you?</span></h1>
           <input placeholder="Search" className='form-control' type="text" value={input} onChange={e => setInput(e.target.value)} />
         </div>

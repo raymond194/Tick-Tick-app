@@ -71,7 +71,7 @@
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
-    align-content: center;
+    align-content: flex-start;
 }
 
 .helpcenter-box2 {
@@ -208,6 +208,15 @@
         gap: 0px;
         flex-wrap: wrap;
     }
+
+    .helpcenter-box2 {
+        background-color: white;
+        padding: 25px 28px 20px 28px;
+        border-radius: 10px;
+        cursor: pointer;
+        transform: translate(0px, 0px);
+        transition: transform 0.3s;
+    }
 }
 
 @media(max-width: 900px) {
@@ -256,6 +265,41 @@
         font-size: 15px;
         transform: translate(0px, -12px);
         font-weight: normal;
+    }
+}
+
+@media(max-width: 480px) {
+    .helpcenter {
+        padding: 90px 0px 0 20px;
+    }
+
+    .helpcenter-header-cont {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    
+
+    .helpcenter-header-cont h1 {
+        display: none;
+    }
+
+    .helpcenter-header-cont input {
+        width: 100%;
+        max-width: 450px;
+        color: grey;
+        padding: 10px 0px 10px 0px;
+        margin-top: 0px;
+    }
+
+    .helpcenter-box2 p {
+        font-size: 9px;
+        color: grey;
+    }
+
+    .helpcenter-box2 h4 {
+        font-size: 16px;
     }
 }
 

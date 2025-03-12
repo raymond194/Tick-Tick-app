@@ -55,7 +55,7 @@ function Footer() {
             </select>
           </div>
         </div>
-        <hr style={{ marginTop: "50px", marginBottom: "40px" }} />
+        <hr style={{ marginTop: "20px", marginBottom: "40px" }} />
         <p style={{ paddingBottom: "20px", color: "grey" }}>© 2025 TickTick Team </p>
       </div>
     </>

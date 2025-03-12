@@ -10,13 +10,13 @@
 .sign-container2 {
     background-color: white;
     border-radius: 15px;
-    padding: 40px 40px 40px 40px;
+    padding: 75px 40px 40px 40px;
     display: flex;
     flex-direction: column;
     width: 100%;
     max-width: 400px;
     gap: 10px;
-    margin-top: 10px;
+    margin-top: 50px;
 }
 
 .sign-container2 h4 {
